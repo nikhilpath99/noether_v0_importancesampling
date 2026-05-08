@@ -156,6 +156,8 @@ class AirFRANSPreset(AeroCFDPreset):
             "volume_vorticity",
             "volume_sdf",
             "surface_sdf",
+            "volume_importance_weights",
+            "surface_importance_weights",
         }
 
     def target_properties(self) -> list[str]:

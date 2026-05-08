@@ -206,6 +206,8 @@ class AirFRANSDataset(AeroDataset):
         Raises:
             RuntimeError: If the file cannot be loaded.
         """
+        if filename is None:
+            raise RuntimeError(f"Attempted to load a field not present in the filemap (idx={idx})")
         path = self.source_root / self.design_ids[idx] / filename
         try:
             return torch.load(path, weights_only=True)
