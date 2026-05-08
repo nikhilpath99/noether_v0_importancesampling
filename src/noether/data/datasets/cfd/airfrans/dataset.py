@@ -61,7 +61,7 @@ class AirFRANSDatasetConfig(DatasetBaseConfig):
             )
     """
 
-    kind: str | None = "airfrans.AirFRANSDataset"
+    kind: str | None = "noether.data.datasets.cfd.AirFRANSDataset"
     root: str
     split: AirFRANSSplit
     manifest: str = "manifest.json"
