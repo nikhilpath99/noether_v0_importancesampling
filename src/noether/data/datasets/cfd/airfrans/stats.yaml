@@ -6,8 +6,8 @@ surface_pos_mean:              [0.3831, 0.0079]
 surface_pos_std:               [0.3958, 0.0334]
 volume_pos_mean:               [0.2844, 0.0112]
 volume_pos_std:                [0.5962, 0.3184]
-raw_pos_min:                   [-2.1648, -1.6456]
-raw_pos_max:                   [4.2321,   1.6213]
+raw_pos_min:                   [-3.0, -2.5]
+raw_pos_max:                   [5.0,   2.5]
 
 # Pressure
 surface_pressure_mean:         [-1154.78]

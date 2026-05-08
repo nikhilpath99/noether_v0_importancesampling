@@ -48,8 +48,8 @@ class AirFRANSPreset(AeroCFDPreset):
         "surface_pos_std":              [0.3958, 0.0334],
         "volume_pos_mean":              [0.2844, 0.0112],
         "volume_pos_std":               [0.5962, 0.3184],
-        "raw_pos_min":                  [-2.1648, -1.6456],
-        "raw_pos_max":                  [4.2321,   1.6213],
+        "raw_pos_min":                  [-3.0, -2.5],
+        "raw_pos_max":                  [5.0,   2.5],
         # Pressure
         "surface_pressure_mean":        [-1154.78],
         "surface_pressure_std":         [4892.50],
@@ -137,12 +137,12 @@ class AirFRANSPreset(AeroCFDPreset):
             ),
             "surface_position": FieldNormalizerConfig(
                 strategy="position",
-                scale=1,
+                scale=1000,
                 stat_keys={"min": "raw_pos_min", "max": "raw_pos_max"},
             ),
             "volume_position": FieldNormalizerConfig(
                 strategy="position",
-                scale=1,
+                scale=1000,
                 stat_keys={"min": "raw_pos_min", "max": "raw_pos_max"},
             ),
         }
