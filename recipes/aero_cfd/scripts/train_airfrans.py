@@ -71,10 +71,8 @@ def train_abupt(
             physics_blocks=["perceiver"] + ["shared", "cross"] * 3,
         ),
         trainer_kind=TRAINER_KIND,
-        trainer_params=dict(
-            field_weights=FIELD_WEIGHTS,
-            num_workers=num_workers,
-        ),
+        trainer_params=dict(field_weights=FIELD_WEIGHTS),
+        num_workers=num_workers,
         dataset_root=dataset_root,
         output_path=output_path,
         datasets={"train": train_split, "test": test_split},
